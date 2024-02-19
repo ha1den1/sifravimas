@@ -20,24 +20,12 @@ public class Main {
             scanner.nextLine();
 
             switch (choice) {
-                case 1:
-                    encryptData(scanner);
-                    break;
-                case 2:
-                    decryptOperation(scanner);
-                    break;
-                case 3:
-                    encryptASCII(scanner);
-                    break;
-                case 4:
-                    decryptASCII(scanner);
-                    break;
-                case 0:
-                    continueRunning = false;
-                    break;
-                default:
-                    System.out.println("Netinkamas pasirinkimas.");
-                    break;
+                case 1 -> encryptData(scanner);
+                case 2 -> decryptOperation(scanner);
+                case 3 -> encryptASCII(scanner);
+                case 4 -> decryptASCII(scanner);
+                case 0 -> continueRunning = false;
+                default -> System.out.println("Netinkamas pasirinkimas.");
             }
         }
 
